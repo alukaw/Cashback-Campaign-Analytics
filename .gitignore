@@ -1,0 +1,19 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# macOS / Windows
+.DS_Store
+Thumbs.db
+
+# Временные файлы Excel и Power BI
+~$*
+*.pbix.bak
+
+# Сырые синтетические данные (≈ 38 МБ): не храним в Git,
+# они воспроизводимо пересоздаются скриптом scripts/01_generate_data.py (seed = 42)
+data/raw/*.csv
+
+# Локальная база DuckDB (пересоздаётся SQL-скриптами)
+data/processed/*.duckdb
